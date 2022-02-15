@@ -10,4 +10,5 @@ Dot<br />
 Border<br />
 Color<br />
 
-See screen shots for examples.
+See screenshots for examples.<br />
+Apk: build\app\outputs\flutter-apk\quarto.apk
