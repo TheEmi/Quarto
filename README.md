@@ -4,7 +4,7 @@
 Each player takes turns placing a piece and then giving the opponent one.<br />
 The goal of the game is to be the first to have 4 pieces in a line (vertically, diagonally, horizontally) sharing one trait.<br />
 
-Each piece has 4 characteristics:
+Each piece has 4 characteristics:<br />
 Shape<br />
 Dot<br />
 Border<br />
