@@ -165,7 +165,6 @@ class _BoardState extends State<Board> {
         if (j == 3) {
           checkLine(board[i * 4 + j - 3], board[i * 4 + j - 2],
               board[i * 4 + j - 1], board[i * 4 + j]);
-          return 1;
         }
       }
     }
@@ -176,7 +175,6 @@ class _BoardState extends State<Board> {
         if (j == 3) {
           checkLine(board[(j - 3) * 4 + i], board[(j - 2) * 4 + i],
               board[(j - 1) * 4 + i], board[j * 4 + i]);
-          return 1;
         }
       }
     }
@@ -186,7 +184,6 @@ class _BoardState extends State<Board> {
         board[10][0] == 1 &&
         board[15][0] == 1) {
       checkLine(board[0], board[5], board[10], board[15]);
-      return 1;
     }
     //second diagonal
     if (board[3][0] == 1 &&
@@ -194,9 +191,9 @@ class _BoardState extends State<Board> {
         board[9][0] == 1 &&
         board[12][0] == 1) {
       checkLine(board[3], board[6], board[9], board[12]);
-      return 1;
     }
     //check tie
+    if(!PlayerTurn.gameWon)
     for (int i = 0; i < 16; i++) {
       if (board[i][0] == 0) break;
       if (i == 15) {
